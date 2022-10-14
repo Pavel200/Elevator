@@ -1,7 +1,5 @@
 out/
-*.class
-/.classpath
-/.project
-/.settings
-/org.eclipse.jdt.core.prefs
-/org.eclipse.core.resources.prefs
+.classpath
+.project
+.settings
+*.prefs
