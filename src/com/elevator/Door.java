@@ -1,9 +1,9 @@
 package com.elevator;
 
-public class ElevatorDoor {
+public class Door {
 	private boolean open = false;
 	
-	public ElevatorDoor() {}
+	public Door() {}
 	
 	public void openDoor() {}
 	public void closeDoor() {}
