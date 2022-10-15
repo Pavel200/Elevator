@@ -1,8 +1,6 @@
 package com.elevator;
 
-import javax.lang.model.element.Element;
-
-public class Elevator {
+public class Elevator extends Location {
 	
 	/* атрибуты класса */
 	private boolean moving;
@@ -13,8 +11,8 @@ public class Elevator {
 	private int travelTime = 5;
 	
 	/* объекты класса */
-	private ElevatorDoor elevatorDoor;
-	private ElevatorButton elevatorButton;
+	private Door elevatorDoor;
+	private Button elevatorButton;
 	private Bell bell;
 	
 	/* конструктор класса */
