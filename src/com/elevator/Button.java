@@ -1,11 +1,10 @@
 package com.elevator;
 
-public class ElevatorButton {
+public class Button {
 	private boolean pressed = false;
 	
-	public ElevatorButton() {}
+	public Button() {}
 	
 	public void resetButton() {}
-	
 	public void pressButton() {}
 }
