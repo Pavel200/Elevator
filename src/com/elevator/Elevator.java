@@ -1,6 +1,13 @@
 package com.elevator;
 
-public class Elevator extends Location {
+import com.elevator.event.BellEvent;
+import com.elevator.event.BellListener;
+import com.elevator.event.ButtonEvent;
+import com.elevator.event.ButtonListener;
+import com.elevator.event.DoorEvent;
+import com.elevator.event.DoorListener;
+
+public class Elevator extends Location implements ButtonListener, DoorListener, BellListener {
 	
 	/* атрибуты класса */
 	private boolean moving = false;
@@ -16,7 +23,9 @@ public class Elevator extends Location {
 	private Bell bell;
 	
 	/* конструктор класса */
-	public Elevator() {}
+	public Elevator() {
+		
+	}
 	
 	public void ride() {}
 	public void requestElevator() {}
@@ -37,5 +46,30 @@ public class Elevator extends Location {
 	@Override
 	public Door getDoor() {
 		return elevatorDoor;
+	}
+
+	@Override
+	public void bellRang(BellEvent bellEvent) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void doorOpened(DoorEvent doorEvent) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void doorClosed(DoorEvent doorEvent) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void buttonPressed(ButtonEvent buttonEvent) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void buttonReset(ButtonEvent buttonEvent) {
+		// TODO Auto-generated method stub
 	}
 }
