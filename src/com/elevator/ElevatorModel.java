@@ -36,4 +36,10 @@ public class ElevatorModel implements PersonMoveListener {
 	public void personExited(PersonMoveEvent personMoveEvent) {
 		// TODO Auto-generated method stub
 	}
+
+	public void placePersonOnFloor(String firstFloorName) {}
+
+	public void addPersonMoveListener(PersonMoveListener personMoveListener) {
+		
+	}
 }
